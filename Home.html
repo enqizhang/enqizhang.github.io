@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Home Of Zhang</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/font-awesome.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/templatemo-style.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+    <script type="text/javascript">
+      window.onload = function(){
+      var arr = ["backgroundmusic/itsumo.mp3","backgroundmusic/homeland.mp3","backgroundmusic/Rain.mp3","backgroundmusic/Memory.mp3"];
+      var myAudio = new Audio();
+      myAudio.preload = true;
+      myAudio.controls = false;
+      myAudio.src = arr.pop();         //每次读数组最后一个元素
+      myAudio.addEventListener('ended', playEndedHandler, false);
+      myAudio.play();
+      document.getElementById("audioBox").appendChild(myAudio);
+      myAudio.loop = true;//禁止循环，否则无法触发ended事件
+      function playEndedHandler(){
+        myAudio.src = arr.pop();
+        myAudio.play();
+        console.log(arr.length);
+        !arr.length && myAudio.removeEventListener('ended',playEndedHandler,false);//只有一个元素时解除绑定
+       }
+     }
+    </script>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    
+        <div class="responsive-header visible-xs visible-sm">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="top-section">
+                            <div class="profile-image">
+                                <img src="img/profile.jpg" alt="Volton">
+                            </div>
+                            <div class="profile-content">
+                                <h3 class="profile-title">enqi</h3>
+                                <p class="profile-description">zhang</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="toggle-menu"><i class="fa fa-bars"></i></a>
+                <div class="main-navigation responsive-menu">
+                    <ul class="navigation">
+                        <li><a href="#top"><i class="fa fa-home"></i>Home</a></li>
+                        <li><a href="#about"><i class="fa fa-user"></i>About Me</a></li>
+                        <li><a href="#projects"><i class="fa fa-newspaper-o"></i>My Skill</a></li>
+                        <li><a href="#contact"><i class="fa fa-envelope"></i>Contact Me</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+		
+        <!-- SIDEBAR -->
+        <div class="sidebar-menu hidden-xs hidden-sm">
+            <div class="top-section">
+                <div class="profile-image">
+                    <img src="img/profile.jpg" alt="Volton">
+                </div>
+                <h3 class="profile-title">enqi</h3>
+                <p class="profile-description">zhang</p>
+            </div> <!-- top-section -->
+            <div class="main-navigation">
+                <ul class="navigation">
+                    <li><a href="#top"><i class="fa fa-globe"></i>Welcome</a></li>
+                    <li><a href="#about"><i class="fa fa-pencil"></i>About Me</a></li>
+                    <li><a href="#projects"><i class="fa fa-paperclip"></i>My Skill</a></li>
+                    <li><a href="#contact"><i class="fa fa-link"></i>Contact Me</a></li>
+                </ul>
+            </div> <!-- .main-navigation -->
+            
+        </div> <!-- .sidebar-menu -->
+        
+		
+        	
+        <div class="banner-bg" id="top">
+            <div class="banner-overlay"></div>
+            <div class="welcome-text">
+
+             <h2>Welcome</h2>
+             <h2>To My Home Land</h2>
+            </div>
+        </div>
+
+        <!-- MAIN CONTENT -->
+        <div class="main-content">
+            <div class="fluid-container">
+
+                <div class="content-wrapper">
+                
+                    <!-- ABOUT -->
+                    <div class="page-section" id="about">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h4 class="widget-title">About Me</h4>
+                            <div class="about-image">
+                                <marquee scrollamount=10px scrolldelay=1 align="right"  hspace="20px" vspace="middle" >
+                                	<img src="img/zhang1.jpg" border="0" height="360px" >
+                                	<img src="img/zhang2.jpg" border="0" height="360px" >
+                                	<img src="img/zhang3.jpg" border="0" height="360px" >
+                                </marquee>
+                            </div>
+                          <p class="ps1"><span id="s1">&nbsp&nbspH</span><span>i!我叫张恩齐，山东省潍坊人，现就读于沈阳师范大学软件工程学院。是一个地道的码农。。。想知道我会做啥，点击</span><a href="#projects">我的能力</a><span>吧！！！
+                          当然我会的不仅仅是编代码，做饭，音乐都是我的最爱。偶尔你会看到我跟精神病患者一样在摇头晃脑，左右抽搐。Don't Worry，I have a Happy Time！！<br/>
+                          &nbsp&nbsp&nbsp&nbsp当然，音乐，做饭只是一个爱好。是对美好生活的追求。但是，为了自己有能力去享受这些，或者说有能力给自己创造一个舒适的生活。我也在努力地提高自己，磨练自己。为未来的生活而努力！！！<br/>
+                          &nbsp&nbsp&nbsp&nbsp有人说编程是一个苦差事，面对数以万计的、杂乱的代码，会让很对人抓狂。但是，在我看来，编程不仅仅是一项枯燥乏味的工作，而是一项工程，一项改变机器，改变人生，甚至改变世界的方法。也许，在外人看来我只是在敲敲键盘，写写代码。但是我是在指导机器甚至别人的思想。让别人按照我的规划来工作，来生活。<br/>
+                          &nbsp&nbsp&nbsp&nbsp想到这是不是有点小激动咩。。。马克思说过，未来是光明的，道路是曲折的。在此，我诚恳的希望各种大神来指导我。感谢您的阅读，本人的联系地址请见</span><a href="#contact">我的信息</a>。</p>
+                            <hr>
+                        </div>
+                    </div> <!-- #about -->
+                    </div>
+                    
+                    <!-- PROJECTS -->
+                    <div class="page-section1" id="projects">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1 class="widget-title" style="font-size: 60px;">My Skill</h1>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <div class="tablearea">
+                                <h4 style=" font-size: 40px; text-align: center;">个人技能</h4>
+                                <br/>
+                                <br/>
+                       <div class="skills-info">
+                <div class="col-md-6 bar-grids">
+                    <h6>WEB DESIGN  <span> 85% </span></h6>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped active" style="width: 85%">
+                        </div>
+                    </div>
+                    <h6>UI DESIGN & DEVELOPER <span> 85% </span></h6>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped active" style="width: 85%">
+                        </div>
+                    </div>
+                    <h6>HTML/CSS<span>90% </span></h6>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped active" style="width: 90%">
+                        </div>
+                    </div>
+                    <h6>PHOTOSHOP <span> 90% </span></h6>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped active" style="width: 90%">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 bar-grids">
+                    <h6>PROJECT MANAGEMENT <span> 95% </span></h6>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped active" style="width: 95%">
+                        </div>
+                    </div>
+                    <h6>SOCIAL MEDIA MARKETING<span> 95% </span></h6>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped active" style="width: 95%">
+                        </div>
+                    </div>
+                    <h6>UX DEVELOPER<span>70% </span></h6>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped active" style="width: 70%">
+                        </div>
+                    </div>
+                    <h6>PHP DESIGN<span> 70% </span></h6>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped active" style="width: 70%">
+                        </div>
+                        </div>
+                        <br/>
+                        <br/>
+                </div>
+                            <br/>
+                            <br/>
+                            <h4 style=" font-size: 40px; text-align:center;">个人爱好</h4>
+                            <br/>
+                            <br/>
+                            <ul style=" font-size: 20px; ">
+                                <li>烹饪&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp虽然色香味不全，但是家常小炒还ok</li>
+                                <br/>
+                                <li>体育运动&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp种类繁多，实力不强</li>
+                                <br/>
+                                <li>乐器&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp喜欢研究些稀奇古怪的音乐</li>
+                            </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- .projects-holder -->
+                    </div>
+                    <hr>
+
+                    <!-- CONTACT -->
+                    <div class="page-section2" id="contact">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1 class="widget-title" style="font-size:40px; font-weight: bold; ">PLACE TO TALK WITH ME</h1>
+                            <br/>
+                            <br/>
+                           <ul style=" font-size: 20px; ">
+                            <li>QQ:114826xxxx</li>
+                            <br/>
+                            <li>mail:zhangenqixxxx@163.com</li>
+                            <br/>
+                            <li>Tel:158xxxxxxxx</li>
+                           </ul>
+                        </div>
+                    </div>
+                   
+                    </div>
+                    <hr>
+
+                    <div class="row" id="footer">
+                        <div class="col-md-12 text-center">
+                            
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <script src="js/vendor/jquery-1.10.2.min.js"></script>
+        <script src="js/min/plugins.min.js"></script>
+        <script src="js/min/main.min.js"></script>
+
+    </body>
+</html>
