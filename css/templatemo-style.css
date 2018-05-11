@@ -502,12 +502,7 @@ h3.profile-title {
   font-family: "黑体";
   font-size: 25px;
   font-weight: bold;
-  color: black;
-  animation: textcolor:10s;
-  -moz-animation:textcolor 10s; 
-  -webkit-animation:textcolor 10s; 
-  -o-animation:textcolor 10s; 
-  animation-iteration-count: infinite;
+  color: blue;
 }
 @keyframes textcolor
 {
